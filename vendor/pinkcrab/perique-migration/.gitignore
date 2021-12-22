@@ -1,0 +1,12 @@
+/vendor
+/wordpress
+composer.lock
+coverage.xml
+clover.xml
+/coverage-report
+plugin.php
+
+.idea
+#vscode
+.vscode
+workspace.code-workspace

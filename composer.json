@@ -1,0 +1,19 @@
+{
+    "name": "gin0115/perique-migrations-example-a",
+    "description": "This is an example project using Perique and Perique Migrations",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gin0115\\Perique_Migrations_Example\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "Glynn Quelch",
+        "email": "glynn.quelch@gmail.com"
+    }],
+    "require": {
+        "pinkcrab/perique-migration": "dev-master",
+        "pinkcrab/perique-framework-core": "^1.0"
+    }
+}
