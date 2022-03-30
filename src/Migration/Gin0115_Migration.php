@@ -24,12 +24,20 @@ class Gin0115_Migration extends Migration {
 	public function __construct( App_Config $app_config, Some_Service $some_service ) {
 		$this->app_config   = $app_config;
 		$this->some_service = $some_service;
+
+		// The parents constructor should always be called after setting any dependencies.
 		parent::__construct();
 	}
 
+	/**
+	 * Sets the table name, from App Config
+	 *
+	 * @return string
+	 */
 	protected function table_name(): string {
 		return $this->app_config->db_tables( 'gin0115' );
 	}
+
 	/**
 	 * Defines the schema for the migration.
 	 *
@@ -62,12 +70,20 @@ class Gin0115_Migration extends Migration {
 	}
 
 	/**
-	 * This table should be dropped when its deactivated
-	 * Will then be added again when activated again.
+	 * This table should NOT be dropped when its deactivated
 	 *
 	 * @return bool
 	 */
 	public function drop_on_deactivation(): bool {
+		return false;
+	}
+
+	/**
+	 * This table should be dropped when its uninstalled
+	 *
+	 * @return bool
+	 */
+	public function drop_on_uninstall(): bool {
 		return true;
 	}
 }
