@@ -28,70 +28,70 @@ class Gin0115_Migration extends PinkCrab\Perique\Migration\Migration {
         PinkCrab\Perique\Application\App_Config $app_config, 
         Gin0115\Perique_Migrations_Example\Service\Some_Service $some_service 
     ) {
-		$this->app_config   = $app_config;
-		$this->some_service = $some_service;
+        $this->app_config   = $app_config;
+        $this->some_service = $some_service;
 
-		// The parents constructor should always be called after setting any dependencies.
-		parent::__construct();
-	}
+        // The parents constructor should always be called after setting any dependencies.
+        parent::__construct();
+    }
 
-	/**
-	 * Sets the table name, from App Config
-	 *
-	 * @return string
-	 */
-	protected function table_name(): string {
-		return $this->app_config->db_tables( 'gin0115' );
-	}
+    /**
+     * Sets the table name, from App Config
+     *
+     * @return string
+     */
+    protected function table_name(): string {
+        return $this->app_config->db_tables( 'gin0115' );
+    }
 
-	/**
-	 * Defines the schema for the migration.
-	 *
-	 * @param Schema $schema_config
-	 * @return void
-	 */
-	public function schema( PinkCrab\Table_Builder\Schema $schema_config ): void {
-		$schema_config->column( 'id' )
-			->unsigned_int( 11 )
-			->auto_increment();
+    /**
+     * Defines the schema for the migration.
+     *
+     * @param Schema $schema_config
+     * @return void
+     */
+    public function schema( PinkCrab\Table_Builder\Schema $schema_config ): void {
+        $schema_config->column( 'id' )
+            ->unsigned_int( 11 )
+            ->auto_increment();
 
-		$schema_config->column( 'foo' )
-			->text( 24 );
+        $schema_config->column( 'foo' )
+            ->text( 24 );
 
-		$schema_config->column( 'bar' )
-			->text( 24 );
+        $schema_config->column( 'bar' )
+            ->text( 24 );
 
-		$schema_config->index( 'id' )
-			->primary();
-	}
+        $schema_config->index( 'id' )
+            ->primary();
+    }
 
-	/**
-	 * Seed table using data from some injected service.
-	 *
-	 * @param array<string,mixed>[] $seeds
-	 * @return array<string,mixed>[]
-	 */
-	public function seed( array $seeds ): array {
-		return $this->some_service->generate_migration_seeds();
-	}
+    /**
+     * Seed table using data from some injected service.
+     *
+     * @param array<string,mixed>[] $seeds
+     * @return array<string,mixed>[]
+     */
+    public function seed( array $seeds ): array {
+        return $this->some_service->generate_migration_seeds();
+    }
 
-	/**
-	 * This table should NOT be dropped when its deactivated
-	 *
-	 * @return bool
-	 */
-	public function drop_on_deactivation(): bool {
-		return false;
-	}
+    /**
+     * This table should NOT be dropped when its deactivated
+     *
+     * @return bool
+     */
+    public function drop_on_deactivation(): bool {
+        return false;
+    }
 
-	/**
-	 * This table should be dropped when its uninstalled
-	 *
-	 * @return bool
-	 */
-	public function drop_on_uninstall(): bool {
-		return true;
-	}
+    /**
+     * This table should be dropped when its uninstalled
+     *
+     * @return bool
+     */
+    public function drop_on_uninstall(): bool {
+        return true;
+    }
 }
 ```
 
