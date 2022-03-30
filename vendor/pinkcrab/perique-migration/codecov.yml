@@ -1,5 +1,0 @@
-coverage:
-  status:
-    project:
-      default:
-        target: 97.5% #overall project/ repo coverage

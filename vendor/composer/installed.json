@@ -118,41 +118,40 @@
         },
         {
             "name": "pinkcrab/perique-framework-core",
-            "version": "1.0.7",
-            "version_normalized": "1.0.7.0",
+            "version": "1.0.8",
+            "version_normalized": "1.0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pink-Crab/Perqiue-Framework.git",
-                "reference": "3b65dc903e4b4bfbedd529c33a60b0d8db947e38"
+                "reference": "be5922bc7eeacfc96856e8fd5ee9769bb84113ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pink-Crab/Perqiue-Framework/zipball/3b65dc903e4b4bfbedd529c33a60b0d8db947e38",
-                "reference": "3b65dc903e4b4bfbedd529c33a60b0d8db947e38",
+                "url": "https://api.github.com/repos/Pink-Crab/Perqiue-Framework/zipball/be5922bc7eeacfc96856e8fd5ee9769bb84113ab",
+                "reference": "be5922bc7eeacfc96856e8fd5ee9769bb84113ab",
                 "shasum": ""
             },
             "require": {
                 "level-2/dice": "4.0.*",
                 "php": ">=7.1.0",
-                "pinkcrab/hook-loader": "^1.1.2",
+                "pinkcrab/hook-loader": "^1.1",
                 "psr/container": "^1.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "*",
-                "gin0115/wpunit-helpers": "^1.0",
+                "gin0115/wpunit-helpers": "~1.0.0",
                 "object-calisthenics/phpcs-calisthenics-rules": "*",
-                "pcov/clobber": "^2.0",
-                "php-stubs/wordpress-stubs": "^5.6.0",
-                "phpstan/phpstan": "^0.12.6",
+                "php-stubs/wordpress-stubs": "^5.8.0",
+                "phpstan/phpstan": "^1.0",
                 "phpunit/phpunit": "^7.0",
-                "roots/wordpress": "^5.5",
+                "roots/wordpress": "^5.8",
                 "symfony/var-dumper": "4.*",
-                "szepeviktor/phpstan-wordpress": "^0.7.2",
+                "szepeviktor/phpstan-wordpress": "^1.0",
                 "wp-coding-standards/wpcs": "*",
-                "wp-phpunit/wp-phpunit": "^5.0",
+                "wp-phpunit/wp-phpunit": "^5.8",
                 "yoast/phpunit-polyfills": "^0.2.0 || ^1.0.0"
             },
-            "time": "2021-12-09T14:31:20+00:00",
+            "time": "2021-12-29T13:33:52+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -176,7 +175,7 @@
             "homepage": "https://pinkcrab.co.uk",
             "support": {
                 "issues": "https://github.com/Pink-Crab/Perqiue-Framework/issues",
-                "source": "https://github.com/Pink-Crab/Perqiue-Framework/tree/1.0.7"
+                "source": "https://github.com/Pink-Crab/Perqiue-Framework/tree/1.0.8"
             },
             "install-path": "../pinkcrab/perique-framework-core"
         },
@@ -187,43 +186,43 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pink-Crab/Perique_Migrations.git",
-                "reference": "608ffbb2ac9aa1d5c5ebeab0ca1f0b409e801646"
+                "reference": "6340f022e1f9abec4ce01f2119560aee352e7a24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pink-Crab/Perique_Migrations/zipball/608ffbb2ac9aa1d5c5ebeab0ca1f0b409e801646",
-                "reference": "608ffbb2ac9aa1d5c5ebeab0ca1f0b409e801646",
+                "url": "https://api.github.com/repos/Pink-Crab/Perique_Migrations/zipball/6340f022e1f9abec4ce01f2119560aee352e7a24",
+                "reference": "6340f022e1f9abec4ce01f2119560aee352e7a24",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0",
-                "pinkcrab/perique-plugin-lifecycle": "^0.1",
+                "pinkcrab/perique-framework-core": "^1.0",
+                "pinkcrab/perique-plugin-lifecycle": "^0.2",
                 "pinkcrab/wp-db-migrations": "^1.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "*",
                 "gin0115/wpunit-helpers": "~1.0.0",
                 "object-calisthenics/phpcs-calisthenics-rules": "*",
-                "php-stubs/wordpress-stubs": "^5.8.0",
+                "php-stubs/wordpress-stubs": "^5.9.0",
                 "phpstan/phpstan": "^1.0",
-                "phpunit/phpunit": "^7.0",
-                "pinkcrab/perique-framework-core": "^1.0",
-                "roots/wordpress": "^5.8",
+                "phpunit/phpunit": "^7.0 || ^8.0",
+                "roots/wordpress": "^5.9",
                 "symfony/var-dumper": "4.*",
                 "szepeviktor/phpstan-wordpress": "^1.0",
                 "wp-coding-standards/wpcs": "*",
-                "wp-phpunit/wp-phpunit": "^5.8",
+                "wp-phpunit/wp-phpunit": "^5.9",
                 "yoast/phpunit-polyfills": "^0.2.0 || ^1.0.0"
             },
-            "time": "2021-12-22T16:15:30+00:00",
+            "time": "2022-03-30T11:51:40+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "PinkCrab\\Perique\\Migration\\": "src/"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -241,23 +240,23 @@
             "homepage": "https://pinkcrab.co.uk",
             "support": {
                 "issues": "https://github.com/Pink-Crab/Perique_Migrations/issues",
-                "source": "https://github.com/Pink-Crab/Perique_Migrations/tree/master"
+                "source": "https://github.com/Pink-Crab/Perique_Migrations/tree/0.1.0-rc2"
             },
             "install-path": "../pinkcrab/perique-migration"
         },
         {
             "name": "pinkcrab/perique-plugin-lifecycle",
-            "version": "0.1.1",
-            "version_normalized": "0.1.1.0",
+            "version": "0.2.0",
+            "version_normalized": "0.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pink-Crab/Perique_Plugin_Life_Cycle.git",
-                "reference": "a0b9da984553e8ad18dd79ab53a087a5c8dcd7d1"
+                "reference": "2944c0fe946a4b2172b0c1a9a88a1f71fce31a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pink-Crab/Perique_Plugin_Life_Cycle/zipball/a0b9da984553e8ad18dd79ab53a087a5c8dcd7d1",
-                "reference": "a0b9da984553e8ad18dd79ab53a087a5c8dcd7d1",
+                "url": "https://api.github.com/repos/Pink-Crab/Perique_Plugin_Life_Cycle/zipball/2944c0fe946a4b2172b0c1a9a88a1f71fce31a9d",
+                "reference": "2944c0fe946a4b2172b0c1a9a88a1f71fce31a9d",
                 "shasum": ""
             },
             "require": {
@@ -267,25 +266,25 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "*",
                 "gin0115/wpunit-helpers": "~1.0.0",
                 "object-calisthenics/phpcs-calisthenics-rules": "*",
-                "php-stubs/wordpress-stubs": "^5.6.0",
-                "phpstan/phpstan": "^0.12.6",
-                "phpunit/phpunit": "^7.0",
+                "php-stubs/wordpress-stubs": "^5.9.0",
+                "phpstan/phpstan": "^1.0",
+                "phpunit/phpunit": "^7.0 || ^8.0",
                 "pinkcrab/perique-framework-core": "^1.0",
-                "roots/wordpress": "^5.5",
+                "roots/wordpress": "^5.9",
                 "symfony/var-dumper": "4.*",
-                "szepeviktor/phpstan-wordpress": "^0.7.2",
+                "szepeviktor/phpstan-wordpress": "^1.0",
                 "wp-coding-standards/wpcs": "*",
-                "wp-phpunit/wp-phpunit": "^5.0",
+                "wp-phpunit/wp-phpunit": "^5.9",
                 "yoast/phpunit-polyfills": "^0.2.0 || ^1.0.0"
             },
-            "time": "2021-12-12T00:42:15+00:00",
+            "time": "2022-03-30T11:17:21+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "PinkCrab\\Plugin_Lifecycle\\": "src/"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -303,23 +302,23 @@
             "homepage": "https://pinkcrab.co.uk",
             "support": {
                 "issues": "https://github.com/Pink-Crab/Perique_Plugin_Life_Cycle/issues",
-                "source": "https://github.com/Pink-Crab/Perique_Plugin_Life_Cycle/tree/0.1.1"
+                "source": "https://github.com/Pink-Crab/Perique_Plugin_Life_Cycle/tree/0.2.0"
             },
             "install-path": "../pinkcrab/perique-plugin-lifecycle"
         },
         {
             "name": "pinkcrab/table_builder",
-            "version": "1.0.0",
-            "version_normalized": "1.0.0.0",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pink-Crab/WPDB-Table-Builder.git",
-                "reference": "268e27e6703fa4b647e26635bf95c113065cf203"
+                "reference": "9ed903e98335055dbd354959619e3d31b85b4d3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pink-Crab/WPDB-Table-Builder/zipball/268e27e6703fa4b647e26635bf95c113065cf203",
-                "reference": "268e27e6703fa4b647e26635bf95c113065cf203",
+                "url": "https://api.github.com/repos/Pink-Crab/WPDB-Table-Builder/zipball/9ed903e98335055dbd354959619e3d31b85b4d3d",
+                "reference": "9ed903e98335055dbd354959619e3d31b85b4d3d",
                 "shasum": ""
             },
             "require": {
@@ -329,25 +328,25 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "*",
                 "gin0115/wpunit-helpers": "~1.0.0",
                 "object-calisthenics/phpcs-calisthenics-rules": "*",
-                "php-stubs/wordpress-stubs": "^5.6.0",
-                "phpstan/phpstan": "^0.12.6",
-                "phpunit/phpunit": "^7.0",
+                "php-stubs/wordpress-stubs": "^5.9.0",
+                "phpstan/phpstan": "^1.0",
+                "phpunit/phpunit": "^7.0 || ^8.0",
                 "pinkcrab/perique-framework-core": "^1.0",
-                "roots/wordpress": "^5.5",
+                "roots/wordpress": "^5.9",
                 "symfony/var-dumper": "4.*",
-                "szepeviktor/phpstan-wordpress": "^0.7.2",
+                "szepeviktor/phpstan-wordpress": "^1.0",
                 "wp-coding-standards/wpcs": "*",
-                "wp-phpunit/wp-phpunit": "^5.0",
+                "wp-phpunit/wp-phpunit": "^5.9",
                 "yoast/phpunit-polyfills": "^0.2.0 || ^1.0.0"
             },
-            "time": "2021-12-17T02:03:17+00:00",
+            "time": "2022-03-20T14:26:08+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "PinkCrab\\Table_Builder\\": "src"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -365,52 +364,51 @@
             "homepage": "https://pinkcrab.co.uk",
             "support": {
                 "issues": "https://github.com/Pink-Crab/WPDB-Table-Builder/issues",
-                "source": "https://github.com/Pink-Crab/WPDB-Table-Builder/tree/1.0.0"
+                "source": "https://github.com/Pink-Crab/WPDB-Table-Builder/tree/1.1.0"
             },
             "install-path": "../pinkcrab/table_builder"
         },
         {
             "name": "pinkcrab/wp-db-migrations",
-            "version": "1.0.1",
-            "version_normalized": "1.0.1.0",
+            "version": "1.0.3",
+            "version_normalized": "1.0.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Pink-Crab/WP_DB_Migration.git",
-                "reference": "185c316f45b2efd1fbeb84b1f7d067ef23b5dc9b"
+                "url": "https://github.com/Pink-Crab/WPDB_Migrations.git",
+                "reference": "95afefb688b91d6b3eda12e18b59f6df03b88fbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pink-Crab/WP_DB_Migration/zipball/185c316f45b2efd1fbeb84b1f7d067ef23b5dc9b",
-                "reference": "185c316f45b2efd1fbeb84b1f7d067ef23b5dc9b",
+                "url": "https://api.github.com/repos/Pink-Crab/WPDB_Migrations/zipball/95afefb688b91d6b3eda12e18b59f6df03b88fbc",
+                "reference": "95afefb688b91d6b3eda12e18b59f6df03b88fbc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0",
-                "pinkcrab/table_builder": "1.0.*"
+                "pinkcrab/table_builder": "1.*"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "*",
                 "gin0115/wpunit-helpers": "~1.0.0",
                 "object-calisthenics/phpcs-calisthenics-rules": "*",
-                "php-stubs/wordpress-stubs": "^5.8.0",
+                "php-stubs/wordpress-stubs": "^5.9.0",
                 "phpstan/phpstan": "^1.0",
-                "phpunit/phpunit": "^7.0",
-                "pinkcrab/perique-framework-core": "^1.0",
-                "roots/wordpress": "^5.8",
+                "phpunit/phpunit": "^7.0 || ^8.0",
+                "roots/wordpress": "^5.9",
                 "symfony/var-dumper": "4.*",
                 "szepeviktor/phpstan-wordpress": "^1.0",
                 "wp-coding-standards/wpcs": "*",
-                "wp-phpunit/wp-phpunit": "^5.8",
+                "wp-phpunit/wp-phpunit": "^5.9",
                 "yoast/phpunit-polyfills": "^0.2.0 || ^1.0.0"
             },
-            "time": "2021-12-20T13:39:47+00:00",
+            "time": "2022-03-27T07:46:30+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "PinkCrab\\DB_Migration\\": "src"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -427,8 +425,8 @@
             "description": "Creates wpdb migrations as part of the PinkCrab Plugin Framework",
             "homepage": "https://pinkcrab.co.uk",
             "support": {
-                "issues": "https://github.com/Pink-Crab/WP_DB_Migration/issues",
-                "source": "https://github.com/Pink-Crab/WP_DB_Migration/tree/1.0.1"
+                "issues": "https://github.com/Pink-Crab/WPDB_Migrations/issues",
+                "source": "https://github.com/Pink-Crab/WPDB_Migrations/tree/1.0.3"
             },
             "install-path": "../pinkcrab/wp-db-migrations"
         },

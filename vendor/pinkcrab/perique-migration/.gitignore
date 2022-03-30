@@ -10,3 +10,4 @@ plugin.php
 #vscode
 .vscode
 workspace.code-workspace
+.phpunit.result.cache

@@ -78,6 +78,12 @@ class Migrations {
 		$this->di_container            = $plugin_state_controller->get_app()->get_container();
 	}
 
+	/**
+	 * Sets the migration log key.
+	 *
+	 * @param string $log_key
+	 * @return self
+	 */
 	public function set_migration_log_key( string $log_key ): self {
 		$this->migration_log_key = $log_key;
 		return $this;
@@ -126,7 +132,6 @@ class Migrations {
 			try {
 				$migration = $this->di_container->create( $migration_string );
 			} catch ( \Throwable $th ) {
-				var_dump($th);
 				throw Migration_Exception::failed_to_construct_migration( $migration_string );
 			}
 		}
