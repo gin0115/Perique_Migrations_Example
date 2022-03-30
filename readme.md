@@ -18,13 +18,13 @@ The model used to define the tables schema, actions carried out on certain [Plug
 ```php
 class Gin0115_Migration extends PinkCrab\Perique\Migration\Migration {
 
-	/** @var PinkCrab\Perique\Application\App_Config */
-	protected $app_config;
+    /** @var PinkCrab\Perique\Application\App_Config */
+    protected $app_config;
 
-	/** @var Gin0115\Perique_Migrations_Example\Service\Some_Service */
-	protected $some_service;
+    /** @var Gin0115\Perique_Migrations_Example\Service\Some_Service */
+    protected $some_service;
 
-	public function __construct( 
+    public function __construct( 
         PinkCrab\Perique\Application\App_Config $app_config, 
         Gin0115\Perique_Migrations_Example\Service\Some_Service $some_service 
     ) {
