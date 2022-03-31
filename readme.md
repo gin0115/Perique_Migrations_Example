@@ -7,7 +7,7 @@ This is an example plugin to showcase the Perique Migrations service.
 ![Table Structure](docs/created_table.png)
 ![Seeded Table Rows](docs/seeded_value.png)
 
-## Once it has been deactivated, the table and its seeded data will be dropped.
+## Once it has been uninstalled(deleted), the table and its seeded data will be dropped.
 
 ## Migration Model
 
