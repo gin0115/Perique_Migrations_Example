@@ -124,4 +124,4 @@ $plugin_state_controller->finalise( __FILE__ );
 ```
 
 ## More Details
-Please see the [Perique Migrations]() repo for more details documentation.
+Please see the [Perique Migrations](https://github.com/Pink-Crab/Perique_Migrations) repo for more details documentation.
